@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <title>Attribute Selector</title>
+    <style>
+        input{
+            margin: 10px;
+        }
+        input[required]{
+            border: 1px solid red;
+        }
+        
+        input[type=submit]{
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+<from>
+    <input type="text" required="required">
+    <input type="submit">
+</from>
+</body>
+</html>
