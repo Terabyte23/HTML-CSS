@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #121212;
+    color: #fff;
+}
+header {
+    background: #121212;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fff; 
+}
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+header nav a:hover {
+    color: #fff;
+}
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: url('https://s.wsj.net/public/resources/images/B3-BY031_TRUCKE_IM_20181002114854.jpg') no-repeat center center/cover;
+}
+.hero h1 {
+    font-size: 4em;
+    margin: 0;
+    text-shadow: 2px 2px 8px #000;
+}
+.hero p {
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-shadow: 1px 1px 5px #000;
+}
+.cta {
+    margin-top: 30px;
+}
+.cta a {
+    padding: 15px 30px;
+    background: #4c77c7;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+.cta a:hover {
+    background: #325eaf;
+    box-shadow: 0 6px 12px rgba(100, 0, 255);
+}
+.about, .events {
+    padding: 50px;
+    text-align: center;
+}
+.about h2, .events h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.about .content {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 1.2em;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+}
+.events .event {
+    margin: 20px 0;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.events .event img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.events .event div {
+    text-align: left;
+}
+footer {
+    background: #000;
+    padding: 20px;
+    text-align: center;
+}
+footer p {
+    margin: 0;
+    font-size: 1em;
+    color: #aaa;
+}
