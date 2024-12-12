@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рок Клуб - Почувствуй Ритм</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">RockClub</div>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <nav>
+            <a href="#about">О Нас</a>
+            <a href="#events">События</a>
+            <a href="#contact">Контакты</a>
+            <a href="#reviews-section">Отзывы</a>
+            <a href="#anket-section">Анкета</a>
+            <a href="index_eng.html">ENG</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Добро пожаловать в RockClub</h1>
+        <p>Место, где музыка оживает</p>
+        <div class="cta">
+            <a href="#events">Узнать Больше</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>О Нас</h2>
+        <p class="content">Наш рок-клуб — это место, где встречаются фанаты рок-музыки. Живые концерты, мощный звук и атмосфера драйва ждут вас. Присоединяйтесь к нашей рок-семье и ощутите магию музыки.</p>
+        <div class="gallery">
+            <img src="foto.jpg" alt="Фото галереи 1">
+            <img src="https://www.andalucia.cc/wp-content/uploads/2022/04/Night-on-the-Red-Rocks.jpg" alt="Фото галереи 2">
+            <img src="https://www.omnimilitaryloans.com/wp-content/uploads/2021/05/iStock-509921501.jpg" alt="Фото галереи 3">
+            <img src="https://th.bing.com/th/id/OIP.eBRRdgFIqEHxUQur-u2L-QHaE7?rs=1&pid=ImgDetMain" alt="Фото галереи 4">
+        </div>
+    </section>
+
+    <section class="events" id="events">
+        <h2>Ближайшие События</h2>
+        <div class="event">
+            <img src="https://th.bing.com/th/id/R.3e33bc8bc77cb48e92e93ccf2b2cf774?rik=m4KEuHmnRzIlxg&riu=http%3a%2f%2fprivolniy.ru%2fwp-content%2fuploads%2f2019%2f09%2frok-19-01.jpg&ehk=AP93yIfKnfmoeo4v2XRq5khUrUErXW7aJoAhhMUjYyY%3d&risl=&pid=ImgRaw&r=0" alt="Event">
+            <div>
+                <h3>Рок Ночь: Локальные Легенды</h3>
+                <p>Дата: 15 марта 2024 | Время: 20:00</p>
+            </div>
+        </div>
+        <div class="event">
+            <img src="https://www.actu-juridique.fr/app/uploads/2023/04/IMG414a6.jpg" alt="Event">
+            <div>
+                <h3>Возрождение Классического Рока</h3>
+                <p>Дата: 22 марта 2024 | Время: 21:00</p>
+            </div>
+        </div>
+        <div class="event">
+            <img src="https://www.gratefulweb.com/sites/default/files/images/articles/sdfsdsdds.jpg" alt="Event">
+            <div>
+                <h3>Открытый Микрофон</h3>
+                <p>Дата: 29 марта 2024 | Время: 19:00</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews-section">
+        <h2 class="review-h2">Отзывы</h2>
+    
+        <div id="reviews-container">
+            <div class="review">
+                <h3>Джон Доу</h3>
+                <p>Удивительное место! Атмосфера электрическая, а музыка всегда на высшем уровне. Настоятельно рекомендуется!</p>
+            </div>
+            <div class="review">
+                <h3>Джейн Смит</h3>
+                <p>Провели здесь незабываемый вечер. Живые группы невероятны, а толпа полна энергии!</p>
+            </div>
+            <div class="review">
+                <h3>Майк Джонсон</h3>
+                <p>Лучший рок-клуб, в котором я когда-либо был. Качество звука превосходное, персонал очень дружелюбный.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="anket-section">
+        <h2>Оставьте отзыв</h2>
+        
+        <div id="anket-container"></div>
+        
+        <form id="anket-form">
+            <input type="text" id="name" placeholder="Ваше имя" required>
+            <textarea id="anket" placeholder="Ваш отзыв" required></textarea>
+            <button class="send" type="submit">Отправить отзыв</button>
+        </form>
+    </section>
+    
+
+    <footer id="contact">
+        <p>&copy; 2024 RockClub | Все права защищены | Контакты: info@rockclub.ee</p>
+        <div class="social-icons">
+            <img src="https://cdn-icons-png.flaticon.com/512/15047/15047435.png" alt="Facebook" class="social-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/3670/3670151.png" alt="Twitter" class="social-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/15707/15707749.png" alt="Instagram" class="social-icon">
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,384 @@
+body {
+    margin: 0;
+    font-family: "Nunito", serif;
+    background: #121212;
+    color: #fff;
+}
+header {
+    background: #121212;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: visible;
+}
+
+header .logo {
+    font-family: "Arial", serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fff; 
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    font-family: "Nunito", serif;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s, transform 0.5s;
+    font-weight: bold;
+    display: inline-block;
+}
+
+header nav a:hover {
+    transform: scale(1.1);
+    color: #7f4af9;
+    transform-origin: center;
+}
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: url('https://s.wsj.net/public/resources/images/B3-BY031_TRUCKE_IM_20181002114854.jpg') no-repeat center center/cover;
+}
+.hero h1 {
+    font-size: 4em;
+    margin: 0;
+    text-shadow: 2px 2px 8px #000;
+}
+.hero p {
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-shadow: 1px 1px 5px #000;
+}
+.cta {
+    margin-top: 30px;
+}
+.cta a {
+    padding: 15px 30px;
+    background: #4c77c7;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+.cta a:hover {
+    background: #325eaf;
+    box-shadow: 0 6px 12px rgba(100, 0, 255);
+}
+.about, .events {
+    padding: 50px;
+    text-align: center;
+}
+.about h2, .events h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.about .content {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 1.2em;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+}
+.events {
+    display: flex;
+    flex-wrap: wrap; /* позволяет элементам "переноситься" на новую строку */
+    justify-content: center; /* выравнивание по центру */
+    gap: 20px; /* отступы между элементами */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.events h2 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px; /* отступ снизу, чтобы разделить заголовок и блоки */
+}
+
+.events .event {
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 400px; /* ширина каждого блока */
+    justify-items: center;
+}
+
+.events .event img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.events .event div {
+    text-align: left;
+}
+
+#reviews-section {
+    background-color: #121212; /* Темный фон */
+    color: #fff; /* Белый текст */
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.review-h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #f5f5f5; /* Светлый цвет для заголовка */
+    text-align: center;
+}
+
+#reviews-container {
+    display: flex; /* Располагаем блоки на одной строке */
+    justify-content: space-evenly; /* Расстояние между блоками */
+    gap: 10px; /* Отступы между отзывами */
+    flex-wrap: nowrap; /* Блоки не будут переноситься на следующую строку */
+    overflow-x: auto; /* Горизонтальная прокрутка, если блоки не помещаются */
+}
+
+.review {
+    background-color: #333; /* Темный фон для каждого отзыва */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); /* Тень для блока */
+    width: 400px; /* Фиксированная ширина для каждого блока */
+    color: #ddd; /* Светлый цвет текста */
+    text-align: left;
+    flex-shrink: 0; /* Блоки не сжимаются */
+}
+
+.review h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #f0f0f0; /* Светлый цвет для имени */
+    text-align: center;
+}
+
+.review p {
+    font-size: 16px;
+    color: #ccc; /* Светлый цвет для текста отзыва */
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #reviews-container {
+        flex-direction: row; /* Блоки остаются в одной строке */
+    }
+
+    .review {
+        width: 100%; /* Каждый блок займет всю ширину на маленьких экранах */
+        max-width: 500px; /* Ограничиваем ширину для маленьких экранов */
+    }
+}
+
+
+
+#anket-section {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 33%;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: white;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.send {
+    padding: 10px;
+    background-color: #7f4af9;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.send:hover {
+    background-color: #6a3fe7;
+}
+
+#anket-list {
+    margin-bottom: 20px;
+}
+
+.anket-item {
+    background-color: #333;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.anket-item p {
+    margin: 0;
+}
+
+.anket-item .name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.anket-item .anket-text {
+    font-style: italic;
+}
+
+form {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    #anket-section {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 60px;
+    }
+
+    input, textarea {
+        font-size: 0.9em;
+    }
+
+    .send {
+        font-size: 1.1em;
+    }
+
+    #anket-section h2 {
+        font-size: 1.5em;
+    }
+
+    form {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #anket-section {
+        width: 95%; 
+        margin-left: 2.5%;
+        margin-top: 40px; 
+    }
+
+    input, textarea {
+        font-size: 0.85em;
+        padding: 8px;
+    }
+
+    .send {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    #anket-section h2 {
+        font-size: 1.4em;
+    }
+
+    .anket-item {
+        padding: 10px;
+    }
+}
+
+
+footer {
+    background: #121212;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icon {
+    width: 40px;
+    margin: 0 15px;
+    transition: transform 0.3s;
+}
+
+footer .social-icon:hover {
+    transform: scale(1.2);
+}
+
+.hamburger {
+    display: none;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+        background: #121212;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    header nav.open {
+        max-height: 300px;
+    }
+
+    header nav a {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
